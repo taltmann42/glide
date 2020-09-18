@@ -1474,7 +1474,7 @@ function siblings(node) {
  * @return {Boolean}
  */
 function exist(node) {
-  if (node && node instanceof window.HTMLElement) {
+  if (node && node.nodeName) {
     return true;
   }
 
